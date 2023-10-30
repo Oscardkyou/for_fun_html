@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #E8E8E8; /* более светлый фон для контраста */
+    background-color: #F3F4F6; /* Светло-серый фон */
     color: #2C2C2C;
     line-height: 1.6;
 }
@@ -18,13 +18,16 @@ header {
     justify-content: space-between;
     padding: 1rem 10%;
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 1.6rem;
     font-weight: 600;
     color: #2C2C2C;
+    border: 2px solid #E56067; /* Красный акцент для логотипа */
+    padding: 5px 15px;
+    border-radius: 8px;
 }
 
 nav ul {
@@ -45,22 +48,22 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2C2C2C;
+    background-color: #E56067; /* Красный акцент */
     color: #FFFFFF;
 }
 
 button {
     padding: 0.6rem 1.2rem;
-    border: none;
-    border-radius: 12px;
-    background-color: #2C2C2C;
+    border: 1px solid #E56067; /* Красный акцент для рамки */
+    border-radius: 25px; /* Сделаем кнопку более закругленной */
+    background-color: #E56067; /* Красный акцент для фона */
     color: #FFFFFF;
     cursor: pointer;
-    transition: all 0.3s ease; /* сглаживание всех переходов */
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #1A1A1A;
+    background-color: #D54C57; /* Немного темнее при наведении */
 }
 
 .main-banner {
@@ -70,23 +73,22 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    border-radius: 12px; /* скругление углов */
+    border-radius: 12px;
 }
 
 .main-banner h1 {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 600;
     text-align: center;
-    background-color: #F3F3F3;
-    padding: 1rem;
-    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .main-banner p {
     font-size: 1.2rem;
-    max-width: 600px;
+    max-width: 650px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
+    margin-bottom: 40px;
 }
 
 .partners {
@@ -95,12 +97,11 @@ button:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 55px;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
+    gap: 25px;
 }
 
 .partners img {
-    max-width: 800px; /* увеличено для лучшего отображения */
+    max-width: 150px;
     transition: transform 0.3s ease;
 }
 
